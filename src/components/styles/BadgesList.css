@@ -1,0 +1,28 @@
+.BadgesListItem {
+  padding: 0;
+}
+
+.BadgesListItem__container {
+  margin-left: 25%;
+  margin-bottom: 1rem;
+  display: flex;
+  background-color: #FFFFFF;
+  box-shadow: 5px 5px #E3E6E6;
+  width: 50%;
+}
+
+
+
+.BadgesListItem__avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.BadgesListItem__text {
+  margin-top: 1rem;
+}
+.BadgesListItem__text p{
+  margin: 0;
+  padding-left: 1rem;
+}
