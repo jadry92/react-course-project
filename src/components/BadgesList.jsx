@@ -7,6 +7,15 @@ import './styles/BadgesList.css'
 class BadgesList extends React.Component {
 
   render() {
+    if (this.props.badges.length === 0) {
+      return (
+        <div className="NotFound">
+          <h3>No badges found</h3>
+          <p>Pleas create a new badge</p>
+        </div>
+      )
+    }
+
     return (
       <ul className="BadgesListItem">
         {this.props.badges.map((badge) => {

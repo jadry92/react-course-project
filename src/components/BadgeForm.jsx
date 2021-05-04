@@ -3,7 +3,6 @@ import React from 'react';
 // Css
 import './styles/Navbar.css'
 // media
-import logo from '../images/logo.svg'
 
 class BadgeForm extends React.Component {
   state = {};
