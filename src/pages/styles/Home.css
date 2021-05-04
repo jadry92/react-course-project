@@ -1,0 +1,32 @@
+.Home {
+  background: url('../../images/stars.svg'), #1B1B25;
+  background-repeat: repeat;
+  color: #ffffff;
+  display: flex;
+  width: 100vw;
+  height: 92.2vh;
+}
+
+.Home__container {
+  width: 50%;
+}
+
+.Home__container-logo {
+  margin-top: 45%;
+  margin-left: 10%;
+}
+
+.Home__container p, h3 {
+  margin-left: 15%;
+}
+
+.Home__container-link {
+  position: relative;
+  right: 0%;
+}
+
+.Home_astronauts {
+  width: 75%;
+  margin-top: 50%;
+  margin-left: 10%;
+}
