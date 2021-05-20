@@ -7,22 +7,10 @@ import './styles/Navbar.css'
 class BadgeForm extends React.Component {
   state = {};
 
-  handelClick = (e) => {
-    console.log('button was clicked');
-  }
-
-  handelSubmit = (e) => {
-    e.preventDefault();
-    console.log('form was sent');
-    console.log(this.state);
-  }
-
   render() {
     return (
       <React.Fragment>
-        <h1>New Attendant</h1>
-
-        <form onSubmit={this.handelSubmit}>
+        <form onSubmit={this.props.onSubmit}>
           <div className="form-group">
             <label>First name</label>
             <input onChange={this.props.onChange}
@@ -57,6 +45,9 @@ class BadgeForm extends React.Component {
             />
           </div>
           <button onClick={this.handelClick} className="btn btn-primary">Save</button>
+
+          {this.props.error && <p className="text-danger">{this.props.error.message}</p>}
+
         </form>
       </React.Fragment>
     );

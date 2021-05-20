@@ -3,7 +3,7 @@ const BASE_URL = 'http://localhost:3001';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 const randomNumber = (min = 0, max = 1) =>
   Math.floor(Math.random() * (max - min + 1)) + min;
-const simulateNetworkLatency = (min = 5000, max = 10000) =>
+const simulateNetworkLatency = (min = 500, max = 1000) =>
   delay(randomNumber(min, max));
 
 async function callApi(endpoint, options = {}) {
@@ -25,8 +25,8 @@ const api = {
   badges: {
     list() {
       //return []
-      throw new Error('not found')
-      //return callApi('/badges');
+      //throw new Error('not found')
+      return callApi('/badges');
     },
     create(badge) {
       return callApi(`/badges`, {

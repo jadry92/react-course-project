@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom'
 import Layout from './Layout'
 // pages
 import BadgeNew from '../pages/BadgeNew'
+import BadgeEdit from '../pages/BadgeEdit'
 import Badges from '../pages/Badges'
 import NotFound from '../pages/NotFound'
 import Home from '../pages/Home'
@@ -17,6 +18,7 @@ function App() {
         <Switch>
           <Route exact path="/badges" component={Badges} />
           <Route exact path="/badges/new" component={BadgeNew} />
+          <Route exact path="/badges/:BadgeId/edit" component={BadgeEdit} />
           <Route exact path="/" component={Home} />
           <Route path="/404" component={NotFound} />
           <Redirect from="*" to="/404" />
