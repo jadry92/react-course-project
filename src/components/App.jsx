@@ -9,7 +9,7 @@ import BadgeEdit from '../pages/BadgeEdit'
 import Badges from '../pages/Badges'
 import NotFound from '../pages/NotFound'
 import Home from '../pages/Home'
-import BadgeDetails from '../pages/BadgeDetails'
+import BadgeDetailsContainer from '../pages/BadgeDetailsContainer'
 
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Route exact path="/badges" component={Badges} />
           <Route exact path="/badges/new" component={BadgeNew} />
           <Route exact path="/badges/:BadgeId/edit" component={BadgeEdit} />
-          <Route exact path="/badges/:BadgeId" component={BadgeDetails} />
+          <Route exact path="/badges/:BadgeId" component={BadgeDetailsContainer} />
           <Route exact path="/" component={Home} />
           <Route path="/404" component={NotFound} />
           <Redirect from="*" to="/404" />
